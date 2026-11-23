@@ -1,0 +1,37 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Test and coverage outputs
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Local environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Local SQLite databases and sidecar files
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Logs and local IDE files
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
