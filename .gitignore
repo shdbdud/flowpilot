@@ -6,7 +6,12 @@ env/
 # Python bytecode and caches
 __pycache__/
 *.py[cod]
+*.pyo
+
+# Test / tooling caches
 .pytest_cache/
+.pytest_tmp/
+.pytest_ok/
 .mypy_cache/
 .ruff_cache/
 
@@ -21,13 +26,13 @@ htmlcov/
 .env.*
 !.env.example
 
-# Local SQLite databases and sidecar files
+# Local SQLite databases and sidecar/backup files
 *.db
-*.db-journal
-*.db-shm
-*.db-wal
+*.db-*
+*.db.bak*
 *.sqlite
 *.sqlite3
+data/*.db*
 
 # Logs and local IDE files
 *.log
